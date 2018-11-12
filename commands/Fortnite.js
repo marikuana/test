@@ -61,8 +61,8 @@ exports.run = async (client, message, args, level) => {
         ctx.drawImage(i, 0, 0);
     });
 
-    var StartWhile = 40;
-    var StCircle = Math.PI/2;
+    var StartWhile = 1000;
+
 
     ctx.fillStyle = `rgba(255, 0, 255, 0.03)`/////// фон
     ctx.fillRect(StartWhile, StartWhile, canvas.width-StartWhile, canvas.height-StartWhile);///////
@@ -82,7 +82,7 @@ exports.run = async (client, message, args, level) => {
 
     Stat.group.all = Stat.lifetimeStats;
 
-    var Y = 180;//180 //400
+    var Y = 5300;
     Stat.group.solo.color = "rgb(0,212,255)";
     Stat.group.duo.color = "rgb(255,128,0)";
     Stat.group.squad.color = "rgb(128,0,255)"; 
@@ -181,7 +181,6 @@ exports.run = async (client, message, args, level) => {
         ctx.lineTo(x1, y);
         ctx.lineTo(x, y1);
         ctx.moveTo(x1, y1);
-        ctx.lineTo(x1, y);
         ctx.lineTo(x, y1);
         ctx.fill();
     }
@@ -194,13 +193,11 @@ exports.run = async (client, message, args, level) => {
         ctx.lineTo(x1, y);
         ctx.lineTo(x, y1);
         ctx.moveTo(x+230, y1);
-        ctx.lineTo(x, y1);
         ctx.lineTo(x1, y);
         ctx.fill();
     }
     function fillStroke(text, x, y){
-        ctx.fillText(text, x, y);
-        ctx.strokeText(text, x, y);
+        ctx.fillText(text, y, y);
     }
     function fillStrokeS(text, x, y){
         var t = ctx.measureText(text);
