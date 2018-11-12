@@ -34,7 +34,7 @@ exports.run = async (client, message, args, level) => {
                 return await msg.edit({embed:{color: 16711680, description: "not found"}});
             }
         }
-    }//*/
+    }
 
 
     var d = new Date().getTime();
@@ -111,7 +111,7 @@ exports.run = async (client, message, args, level) => {
         fillStrokeS(Stat.group[k].kills, StartWhile+570, Y+130);
         fillStrokeS(Stat.group[k].matches, StartWhile+830, Y+130);
         fillStrokeS(Stat.group[k].killsPerMin, StartWhile+1070, Y+130);
-        fillStrokeS(Stat.group[k].killsPerMatch, StartWhile+1330, Y+130);//*/
+        fillStrokeS(Stat.group[k].killsPerMatch, StartWhile+1330, Y+130);
 
         ctx.font = "bold 47px serif";
         f3(StartWhile, Y, Stat.group[k].color);
