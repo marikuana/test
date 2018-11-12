@@ -1,4 +1,4 @@
-/*const Fortnite = require("fortnite-api");
+const Fortnite = require("fortnite-api");
 const Canvas = require("canvas");
 const moment = require("moment");
 require("moment-duration-format");
@@ -223,4 +223,4 @@ exports.help = {
     description: "Stat account Fornite",
     usage: "ftn [userName]"
 }
-*/
+//*/
